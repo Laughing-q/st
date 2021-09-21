@@ -116,7 +116,8 @@ float alphaUnfocus;
 static const char *colorname[] = {
 	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
 	"#cc241d",
-	"#98971a",
+	/* "#98971a", */
+	"#45b97c",
 	"#d79921",
 	"#458588",
 	"#b16286",
@@ -269,8 +270,8 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 	{ MODKEY,               XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ MODKEY,               XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
+	/* { MODKEY,               XK_k,           kscrollup,      {.i =  1} }, */
+	/* { MODKEY,               XK_j,           kscrolldown,    {.i =  1} }, */
 	{ MODKEY,               XK_Up,          kscrollup,      {.i =  1} },
 	{ MODKEY,               XK_Down,        kscrolldown,    {.i =  1} },
 	{ MODKEY,               XK_u,           kscrollup,      {.i = -1} },
