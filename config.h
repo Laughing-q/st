@@ -7,6 +7,7 @@
  */
 /* static char *font = "mono:pixelsize=20:antialias=true:autohint=true"; */
 static char *font = "Liberation Mono:pixelsize=20:antialias=true:autohint=true";
+/* static char *font = "FantasqueSansMono Nerd Font Mono Regular:pixelsize=20:antialias=true:autohint=true"; */
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -283,8 +284,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,		XK_a,		changealpha,	{.f = +0.05} },
 	{ TERMMOD,              XK_Up,          zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Down,        zoom,           {.f = -1} },
-	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
-	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
+	{ TERMMOD,              XK_I,           zoom,           {.f = +1} },
+	{ TERMMOD,              XK_K,           zoom,           {.f = -1} },
 	{ TERMMOD,              XK_U,           zoom,           {.f = +2} },
 	{ TERMMOD,              XK_D,           zoom,           {.f = -2} },
 	/* { MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd } }, */
