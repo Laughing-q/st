@@ -252,8 +252,11 @@ static MouseShortcut mshortcuts[] = {
 
 static char *openurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -o", "externalpipe", NULL };
 static char *copyurlcmd[] = { "/bin/sh", "-c", "st-urlhandler -c", "externalpipe", NULL };
+
+static char *openfilecmd[] = { "/bin/bash", "-c", "st-filehandler -o", "externalpipe", NULL };
+static char *copyfilecmd[] = { "/bin/bash", "-c", "st-filehandler -c", "externalpipe", NULL };
 /* static char *copyoutput[] = { "/bin/sh", "-c", "st-copyout", "externalpipe", NULL }; */
-static char *copyoutput[] = { "/bin/sh", "-c", "copy-cmd-output", "externalpipe", NULL };
+// static char *copyoutput[] = { "/bin/sh", "-c", "copy-cmd-output", "externalpipe", NULL };
 static char *copycommand[] = { "/bin/sh", "-c", "copy-command", "externalpipe", NULL };
 
 
@@ -293,7 +296,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_D,           zoom,           {.f = -2} },
 	{ MODKEY,               XK_o,           externalpipe,   {.v = openurlcmd } },
 	{ MODKEY,               XK_p,           externalpipe,   {.v = copyurlcmd } },
-	{ MODKEY,               XK_n,           externalpipe,   {.v = copyoutput } },
+	{ MODKEY,               XK_n,           externalpipe,   {.v = openfilecmd } },
 	{ MODKEY,               XK_m,           externalpipe,   {.v = copycommand } },
 };
 
