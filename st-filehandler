@@ -12,7 +12,7 @@ filepaths=${filepaths%$IFS}
 while getopts "hoc" o; do case "${o}" in
 	h) printf "Optional arguments for custom use:\\n  -c: copy\\n  -o: xdg-open\\n  -h: Show this message\\n" && exit 1 ;;
 	o) chosen="$(echo "$filepaths" | sed "s/\s//g" | dmenu -i -p 'Open which filepath?' -l 10)"
-	st -e lfimg "$chosen" ;;
+	st -e yazi "$chosen" ;;
 	c) echo "$filepaths" | sed "s/\s//g" | dmenu -i -p 'Copy which filepath?' -l 10 | tr -d '\n' | xclip -selection clipboard ;;
 	*) printf "Invalid option: -%s\\n" "$OPTARG" && exit 1 ;;
 esac done
